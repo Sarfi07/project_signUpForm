@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url('./Norse-Bold.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.image-sidebar {
+    background-color: red;
+    flex: 1;
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    /* text styling */
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    color: white;
+
+}
+    .logo-section {
+        background-color: rgba(0, 0, 0, 0.40);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 20%;
+        height: 25%;
+        padding: 0 32px;
+    }
+    .logo-section > img {
+        width: 40%;
+        height: 70%;
+        align-self: center;
+    }
+    #logo-text {
+        font-family: "Norse Bold", sans-serif;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+    }
+    
+
+.form-section {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 2em;
+    gap: 3em;
+}
+.intro-section > p {
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+div.form {
+    align-self: first baseline;
+}
+
+.name, .contact, .password {
+    display: flex;
+    gap: 5em;
+    margin: 16px 0px;
+}
+
+fieldset {
+    border: none;
+    border-bottom: 4px solid rgba(137, 133, 133, 0.556);
+}
+label {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+input {
+    padding: 2px 8px;
+    border: 2px solid #e5e7eb;
+    border-radius: 2px;
+}
+
+.actions {
+    align-self: first baseline;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.createAccountBtn > button {
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    background-color: #596d48;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-style: none;
+}
+
+.alreadyHaveAccount > span {
+    color:rgb(29, 80, 29);
+    cursor: pointer;
+}
+.alreadyHaveAccount {
+    margin-top: 1em;
+}
+
+/* valid and invalid css */
+/* TODO */
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(107, 107, 214);
+    box-shadow: 2px 2px 5px 1.5px grey;
+}
+input:invalid {
+    border: 2px solid red;
+}
+
+.success {
+    border: 2px solid green;
+}
+
+.error {
+    border: 2px solid red;
+}

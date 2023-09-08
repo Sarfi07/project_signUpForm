@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Sign-up-form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="image-sidebar">
+        <div class="logo-section">
+            <img src="/odin_logo.png" alt="logo">
+            <span id="logo-text">Odin</span>
+        </div>
+    </div>
+    <div class="form-section">
+        <div class="intro-section">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up now to get started.</p>
+            <br><br>
+            <p>You know you want to.</p>
+        </div>
+        <div class="form">
+            <form action="#" id="signUp-form">
+                <fieldset>
+                    <h1>Let's do this!</h1>
+                    <div class="name">
+                        <div class="first">
+                            <div class="first-name-label">
+                                <label for="first-name">FIRST NAME</label>
+                            </div>
+                            <div class="first-name-input">
+                                <input type="text" id="first-name" maxlength="16" pattern="^[a-zA-Z]+$" required>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="second-name-label">
+                                <label for="second-name">SECOND NAME</label>
+                            </div>
+                            <div class="second-name-input">
+                                <input type="text" id="second-name"
+                                maxlength="16" pattern="^[a-zA-Z]+$" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="email">
+                            <div class="email-label">
+                                <label for="email">EMAIL</label>
+                            </div>
+                            <div class="email-input">
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="phone">
+                            <div class="phone-label">
+                                <label for="phone">PHONE NUMBER</label>
+                            </div>
+                            <div class="phone-input">
+                                <input type="tel" id="phone" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="password">
+                        <div class="password1">
+                            <div class="password1-label">
+                                <label for="password1">PASSWORD</label>
+                            </div>
+                            <div class="password1-input">
+                                <input class="error" type="password" id="password1" required>
+                            </div>
+                        </div>
+                        <div class="password2">
+                            <div class="password2-label">
+                                <label for="password2">CONFIRM PASSWORD</label>
+                            </div>
+                            <div class="password2-input">
+                                <input class="error"  type="password" id="password2" required>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                    <div class="actions">
+                        <div class="createAccountBtn">
+                            <button>Create Account</button>
+                        </div>
+                        <div class="alreadyHaveAccount">
+                            Already have an account? <span id="login">Log in</span>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
